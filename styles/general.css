@@ -1,0 +1,17 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rgb(235, 235, 235); */
+    margin: 3.15rem 6.25rem;
+    color: rgb(52, 53, 53);
+    /* height: 2000px; */
+}
+
+.f30b{
+    font-size: 1.85rem;
+    font-weight: bold;
+}
+
+.f20sb{
+    font-size: 1.25rem;
+    font-weight: 600;
+}

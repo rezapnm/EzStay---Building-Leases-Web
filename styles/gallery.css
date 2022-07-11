@@ -1,0 +1,106 @@
+.gallery-grid-div,
+.half-item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+
+.gallery-grid-double{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery-grid-div .building-rating{
+    top: 50px;
+    right: -30px;
+    border-radius: 10px 0px 0px 10px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.gallery-grid-double .building-rating{
+    top: 50px;
+    right: -30px;
+    border-radius: 10px 0px 0px 10px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+
+.gallery-pic{
+    transition: all 0.3s;
+}
+
+.gallery-title{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.gallery-grid-div .gallery-title{
+    top: 50px;
+    left: 0;
+}
+
+.gallery-grid-double .gallery-title{
+    top: 30px;
+    left: 0;
+}
+
+.gallery-grid-div .building-location{
+    position: absolute;
+    top: 85px;
+    left: 0;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.gallery-grid-double .building-location{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.down-arrow-btn{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.gallery-grid-div:hover .gallery-title,
+.gallery-grid-div:hover .building-location,
+.half-item:hover .gallery-title,
+.half-item:hover .building-location {
+    transition-timing-function: ease-in;
+    transform: translateX(20%);
+    opacity: 1;
+}
+
+.gallery-grid-div:hover .building-rating,
+.half-item:hover .building-rating{
+    transition-timing-function: ease-in;
+    transform: translateX(-75%);
+    opacity: 1;
+}
+
+.gallery-grid-div:hover .down-arrow-btn,
+.half-item:hover .down-arrow-btn{
+    transition-timing-function: ease-in;
+    transform: translateY(-40%);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.gallery-grid-div:hover .gallery-pic,
+.half-item:hover .gallery-pic{
+    filter: brightness(60%);
+}
